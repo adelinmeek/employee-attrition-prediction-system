@@ -1,0 +1,67 @@
+{
+  "best_model": "Random Forest",
+  "target": "LeaveOrNot",
+  "features": [
+    "Education",
+    "JoiningYear",
+    "City",
+    "PaymentTier",
+    "Age",
+    "Gender",
+    "EverBenched",
+    "ExperienceInCurrentDomain"
+  ],
+  "test_rows": 36,
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.6389,
+      "precision": 0.625,
+      "recall": 0.7895,
+      "f1": 0.6977,
+      "roc_auc": 0.6718,
+      "confusion_matrix": [
+        [
+          8,
+          9
+        ],
+        [
+          4,
+          15
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.6667,
+      "precision": 0.6667,
+      "recall": 0.7368,
+      "f1": 0.7,
+      "roc_auc": 0.6285,
+      "confusion_matrix": [
+        [
+          10,
+          7
+        ],
+        [
+          5,
+          14
+        ]
+      ]
+    }
+  },
+  "feature_importance": {
+    "num__JoiningYear": 0.255969,
+    "num__Age": 0.209969,
+    "num__ExperienceInCurrentDomain": 0.138219,
+    "num__PaymentTier": 0.091577,
+    "cat__Education_Masters": 0.041654,
+    "cat__Gender_Male": 0.040815,
+    "cat__City_New Delhi": 0.038119,
+    "cat__Education_Bachelors": 0.035481,
+    "cat__Gender_Female": 0.033543,
+    "cat__City_Bangalore": 0.033412,
+    "cat__City_Pune": 0.028469,
+    "cat__EverBenched_Yes": 0.023755,
+    "cat__EverBenched_No": 0.022578,
+    "cat__Education_PHD": 0.006442
+  }
+}
